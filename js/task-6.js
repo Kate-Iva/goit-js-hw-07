@@ -14,9 +14,11 @@ function getRandomHexColor() {
 
 const setCount = event => {
   const value = event.target.value;
-  if (value >= 1 && value <= 100 && value !== countOfBlocks) {
+  if (value >= 1 && value <= 100 ) {
     countOfBlocks = value;
-  }
+  } else {
+    countOfBlocks = 0;
+   }
 };
 
 const generatedBlocks = count => {

@@ -5,7 +5,7 @@ const handlerSubmit = event => {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData);
 
-    if (Object.values(data).some(value => value.trim())) {
+    if (Object.values(data).some(value => value.trim()  === '')) {
         alert('All form fields must be filled in');
     } else {
         console.log(data);
